@@ -24,7 +24,7 @@ function onSearch() {
 
 function getReviewsByBookId(bookId, callback) {
     $.ajax({
-        url: "http://cors-anywhere.herokuapp.com/https://www.goodreads.com/book/show.xml",
+        url: "https://cors-anywhere.herokuapp.com/https://www.goodreads.com/book/show.xml",
         type: "get",
         data: { 
             "key": KEY, 
@@ -43,7 +43,7 @@ function getReviewsByBookId(bookId, callback) {
 
 function findBooksByTitle(text, callback) {
     $.ajax({
-        url: "http://cors-anywhere.herokuapp.com/https://www.goodreads.com/search/index.xml",
+        url: "https://cors-anywhere.herokuapp.com/https://www.goodreads.com/search/index.xml",
         type: "get",
         data: { 
             "q": text,
