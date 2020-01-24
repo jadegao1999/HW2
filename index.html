@@ -1,0 +1,45 @@
+<!doctype html>
+
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Book Reviews</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="center">
+        <div class="textbox center">
+            <img class="logo" alt="book-logo" src="assets/book_logo.png">
+            <h1 class="title">Book Reviews</h1>
+        </div>
+    </div>
+
+    <div class="center">
+        <div class="wrap">
+            <form class="search" action="javascript:void(0);" onsubmit="onSearch()">
+                <input id="text" type="text" class="searchTerm" placeholder="What are you looking for?">
+                <button type=submit class="searchButton">
+                    <i class="fa fa-search"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+    <div id="error-message"></div>
+
+    <div class="center">
+            <img class="image" alt="book-with-glass" src="assets/book_with_glass.jpg">
+    </div>
+
+    <div id="review-table" class="center"></div>
+
+
+  <script src="./scripts.js"></script>
+</body>
+</html>
